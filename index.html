@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Block Planning Console — SIH26027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top control bar -->
+  <header class="topbar">
+    <div class="topbar__brand">
+      <span class="topbar__dot"></span>
+      <div>
+        <h1 class="topbar__title">Block Planning Console</h1>
+        <p class="topbar__subtitle">Engineering · Signal &amp; Telecom · Traction Distribution</p>
+      </div>
+    </div>
+
+    <div class="topbar__controls">
+      <div class="view-toggle" id="viewToggle">
+        <button class="view-toggle__btn is-active" data-view="week">Week</button>
+        <button class="view-toggle__btn" data-view="month">Month</button>
+      </div>
+      <div class="legend" id="legend"><!-- filled by JS --></div>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- Left sidebar: tasks + summary -->
+    <aside class="sidebar">
+      <section class="panel">
+        <h2 class="panel__title">This week</h2>
+        <div class="stat-grid" id="summaryStats"><!-- filled by JS --></div>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel__title">Unscheduled tasks</h2>
+        <ul class="task-list" id="unscheduledList"><!-- filled by JS --></ul>
+      </section>
+    </aside>
+
+    <!-- Main timeline -->
+    <main class="timeline-wrap">
+      <div class="timeline-axis" id="timelineAxis"><!-- filled by JS --></div>
+      <div class="timeline" id="timeline"><!-- filled by JS --></div>
+    </main>
+
+  </div>
+
+  <!-- Slide-in detail drawer -->
+  <aside class="drawer" id="drawer">
+    <button class="drawer__close" id="drawerClose">&times;</button>
+    <div id="drawerContent"><!-- filled by JS --></div>
+  </aside>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

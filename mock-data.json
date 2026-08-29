@@ -1,0 +1,113 @@
+{
+  "blocks": [
+    {
+      "id": "blk_001",
+      "section": "Delhi–Mathura Sec 4",
+      "department": "Engineering",
+      "start_time": "2026-09-02T02:00:00",
+      "end_time": "2026-09-02T05:00:00",
+      "criticality_score": 88,
+      "co_located_with": ["Signal & Telecom"],
+      "reason": { "severity": 45, "days_overdue": 28, "traffic_impact": 15 },
+      "status": "scheduled"
+    },
+    {
+      "id": "blk_002",
+      "section": "Delhi–Mathura Sec 4",
+      "department": "Signal & Telecom",
+      "start_time": "2026-09-02T02:00:00",
+      "end_time": "2026-09-02T05:00:00",
+      "criticality_score": 74,
+      "co_located_with": ["Engineering"],
+      "reason": { "severity": 30, "days_overdue": 20, "traffic_impact": 24 },
+      "status": "scheduled"
+    },
+    {
+      "id": "blk_003",
+      "section": "Agra–Gwalior Sec 1",
+      "department": "Traction",
+      "start_time": "2026-09-02T22:00:00",
+      "end_time": "2026-09-03T01:00:00",
+      "criticality_score": 91,
+      "co_located_with": [],
+      "reason": { "severity": 50, "days_overdue": 33, "traffic_impact": 8 },
+      "status": "scheduled"
+    },
+    {
+      "id": "blk_004",
+      "section": "Mathura–Agra Sec 2",
+      "department": "Engineering",
+      "start_time": "2026-09-03T13:00:00",
+      "end_time": "2026-09-03T15:30:00",
+      "criticality_score": 52,
+      "co_located_with": [],
+      "reason": { "severity": 20, "days_overdue": 12, "traffic_impact": 20 },
+      "status": "scheduled"
+    },
+    {
+      "id": "blk_005",
+      "section": "Gwalior–Jhansi Sec 3",
+      "department": "Signal & Telecom",
+      "start_time": "2026-09-04T03:00:00",
+      "end_time": "2026-09-04T06:00:00",
+      "criticality_score": 66,
+      "co_located_with": ["Traction"],
+      "reason": { "severity": 28, "days_overdue": 18, "traffic_impact": 20 },
+      "status": "scheduled"
+    },
+    {
+      "id": "blk_006",
+      "section": "Gwalior–Jhansi Sec 3",
+      "department": "Traction",
+      "start_time": "2026-09-04T03:00:00",
+      "end_time": "2026-09-04T06:00:00",
+      "criticality_score": 59,
+      "co_located_with": ["Signal & Telecom"],
+      "reason": { "severity": 22, "days_overdue": 14, "traffic_impact": 23 },
+      "status": "scheduled"
+    },
+    {
+      "id": "blk_007",
+      "section": "Delhi–Mathura Sec 4",
+      "department": "Traction",
+      "start_time": "2026-09-05T01:00:00",
+      "end_time": "2026-09-05T03:30:00",
+      "criticality_score": 41,
+      "co_located_with": [],
+      "reason": { "severity": 15, "days_overdue": 9, "traffic_impact": 17 },
+      "status": "scheduled"
+    },
+    {
+      "id": "blk_008",
+      "section": "Jhansi–Bhopal Sec 5",
+      "department": "Engineering",
+      "start_time": "2026-09-06T02:30:00",
+      "end_time": "2026-09-06T04:30:00",
+      "criticality_score": 77,
+      "co_located_with": [],
+      "reason": { "severity": 38, "days_overdue": 22, "traffic_impact": 17 },
+      "status": "scheduled"
+    }
+  ],
+  "unscheduled_tasks": [
+    {
+      "id": "task_014",
+      "department": "Traction",
+      "section": "Bhopal–Itarsi Sec 6",
+      "criticality_score": 64,
+      "status": "unscheduled"
+    },
+    {
+      "id": "task_015",
+      "department": "Signal & Telecom",
+      "section": "Agra–Gwalior Sec 1",
+      "criticality_score": 48,
+      "status": "unscheduled"
+    }
+  ],
+  "summary": {
+    "total_blocks": 8,
+    "train_hours_saved": 34,
+    "critical_defects_addressed_pct": 78
+  }
+}
